@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    tools:context=".Update_Form">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROOM INFO UPDATE"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="15sp"
+            android:id="@+id/updateForm"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you have any vacant room?"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp"
+            android:layout_below="@id/updateForm"
+            android:id="@+id/anyVacantroom"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/anyVacantroom"
+            android:text="Yes"
+            android:id="@+id/yes_radiobtn"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/anyVacantroom"
+            android:text="No"
+            android:id="@+id/no_radiobtn"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How much do you charge as rent?"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp"
+            android:layout_below="@id/yes_radiobtn"
+            android:id="@+id/rent_enquiry"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rent_enquiry"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:inputType="number"
+            android:text="Kshs. "
+            android:id="@+id/rentAmountInput"
+            android:layout_marginStart="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A video clip is required describing one of your rooms"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@id/rentAmountInput"
+            android:id="@+id/videoclipenquiry"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/videoclipenquiry"
+            android:text="RECORD VIDEO CLIP"
+            android:onClick="dispatchTakeVideoIntent"
+            android:id="@+id/recordClip"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/videoclipenquiry"
+            android:text="UPLOAD FROM GALLERY"
+            android:id="@+id/upload"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <VideoView
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:id="@+id/vidView"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/upload"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which security method have you implemented?"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp"
+            android:layout_below="@id/playbtn"
+            android:id="@+id/security_enquiry"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/security_enquiry"
+            android:text="CCTV Surveillance"
+            android:id="@+id/CCTV"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CCTV"
+            android:text="Security Guard"
+            android:id="@+id/security_guard"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/security_guard"
+            android:text="Other"
+            android:id="@+id/other"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/security_guard"
+            android:layout_toRightOf="@id/other"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:inputType="textMultiLine"
+            android:id="@+id/otherSecurity"
+            android:layout_toEndOf="@id/other"
+            android:layout_marginStart="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/other"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:text="SUBMIT"
+            android:onClick="DataSubmission"
+            android:id="@+id/submitbtn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:visibility="gone"
+            android:layout_below="@id/vidView"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/playbtn"/>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "56765485383",
+    "firebase_url": "https://my-room-89acc.firebaseio.com",
+    "project_id": "my-room-89acc",
+    "storage_bucket": "my-room-89acc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56765485383:android:d7a0081e6d1f12b30ffc62",
+        "android_client_info": {
+          "package_name": "ultramodern.activity.myroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56765485383-s43uv6a09c60cupsik42nfsjfacnb0u8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLduQc4IWCwP9-W4qm3C91YwqgxaCo7Bs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56765485383-s43uv6a09c60cupsik42nfsjfacnb0u8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

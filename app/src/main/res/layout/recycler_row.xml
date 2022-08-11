@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/prof_pic"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/prof_pic"
+                android:text="Name: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:id="@+id/name_enquiry"
+                android:textSize="20sp"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/name_enquiry"
+                android:textSize="20sp"
+                android:id="@+id/hostel_name"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/prof_pic"
+                android:layout_below="@id/name_enquiry"
+                android:text="Price: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:id="@+id/price_enquiry"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/name_enquiry"
+                android:textSize="20sp"
+                android:layout_below="@id/hostel_name"
+                android:id="@+id/price"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/prof_pic"
+                android:layout_below="@id/price_enquiry"
+                android:text="Vacancy: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:id="@+id/vacancy_enquiry"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/vacancy_enquiry"
+                android:textSize="20sp"
+                android:layout_below="@id/price"
+                android:id="@+id/vavancy_name"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/prof_pic"
+                android:text="Location: "
+                android:layout_below="@id/vacancy_enquiry"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:id="@+id/location_enquiry"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/location_enquiry"
+                android:textSize="20sp"
+                android:layout_below="@id/vavancy_name"
+                android:id="@+id/location_name"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+
+        </RelativeLayout>
+
+        
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

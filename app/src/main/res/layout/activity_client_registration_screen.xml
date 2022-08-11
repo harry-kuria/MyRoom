@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientRegistrationScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="User Login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="25sp"
+        android:id="@+id/userLoginText"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userLoginText"
+        android:layout_centerHorizontal="true"
+        android:hint="Username"
+        android:inputType="text"
+        android:id="@+id/usernameInput"
+        android:textColorHint="#666362"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameInput"
+        android:inputType="numberPassword"
+        android:hint="Personal Identification Number"
+        android:textColorHint="#666362"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pinInput"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACCESS YOUR ACCOUNT"
+        android:onClick="ToClientDashboard"
+        android:layout_below="@id/pinInput"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/loginbtn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginbtn"
+        android:layout_centerHorizontal="true"
+        android:text="No account with us, "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:id="@+id/noAccountWithUsText"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:onClick="ToClientReg"
+        android:text="Register"
+        android:layout_below="@id/loginbtn"
+        android:layout_toRightOf="@id/noAccountWithUsText"
+        android:textColor="#1589FF"
+        android:textSize="15sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:gravity="center_horizontal" />
+
+
+</RelativeLayout>

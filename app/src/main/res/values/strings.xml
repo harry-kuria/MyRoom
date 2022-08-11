@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Room</string>
+    <string name="pk.eyJ1IjoiaGFycmlzb25rdXJpYSIsImEiOiJja2hvbzd6c20xMWFpMnprMXZhY3l2dHp3In0.2I3eXPlNBvkXqLInSkgrKw">MAPBOX_ACCESS_TOKEN</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
